@@ -2,23 +2,116 @@
 
 .clearfix:before,
 .clearfix:after {
-    content: " ";
-    display: table;
+  content: " ";
+  display: table;
 }
 
 .clearfix:after {
-    clear: both;
+  clear: both;
 }
 
 .clearfix {
-    *zoom: 1;
+  *zoom: 1;
 }
 
 /*Box sizing*/
 
-html {
+/*html {
   box-sizing: border-box;
 }
 *, *:before, *:after {
   box-sizing: inherit;
+}*/
+
+body {
+  font-family: "nyt-cheltenham",georgia,"times new roman",times,serif;
+  color: #333;
+  background-color: #fff;
+}
+
+#shell {
+  max-width: 1605px;
+  height: 1500px;
+  padding-top: 131px;
+  box-shadow: -1px 0 4px 0 #e2e2e2;
+  margin: 0 auto;
+  border-right: 1px solid #e2e2e2;
+  border-left: 1px solid #e2e2e2;
+}
+
+header {
+  max-width: 1605px;
+  width: 100%;
+  height: 48px;
+  position: fixed;
+  /*z-index: 1;*/
+  top: 0;
+  border-bottom: 1px solid #ccc;
+}
+
+#container {
+  max-width: 1605px;
+  width: 100%;
+  height: 48px;
+  position: relative;
+}
+
+#quick-nav {
+  left: -15px;
+  padding-top: 8px;
+  float: left;
+  position: relative;
+}
+
+button {
+  padding: 7px 9px;
+  font-size: 0.6875rem;
+  line-height: 0.8125rem;
+  font-style: normal;
+  font-family: "nyt-franklin",arial,helvetica,sans-serif;
+  border-radius: 3px;
+  transition: background-color 0.3s;
+  border: 1px solid #e2e2e2;
+  background-color: #fff;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+#sections-btn {
+  margin-right: 6px;
+  box-shadow: 0 3px 2px 0 rgba(0,0,0,0.06),inset -1px -1px 1px 0 rgba(0,0,0,0.02);
+  border-bottom-color: #cecece;
+}
+
+#home-btn {
+  border: none;
+  margin-left: 3px;
+}
+
+#search-btn {
+  border: none;
+  margin-left: 3px;
+}
+
+#branding {
+  margin-top: 12px;
+  text-align: center;
+  position: absolute;
+  width: 100%;
+  margin-left: -30px;
+}
+
+#user-tools {
+  float: right;
+  position: relative;
+  padding-right: 15px;
+  padding-top: 8px;
+  margin-right: 15px;
+}
+
+#user-tools button {
+  background-color: #6288a5;
+  border-color: #4d7b9f;
+  color: #fff;
 }
